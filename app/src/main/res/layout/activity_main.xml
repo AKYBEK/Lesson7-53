@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/black"
+		tools:context=".MainActivity">
+
+	<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			app:layout_constraintBottom_toTopOf="@+id/linearLayout">
+
+		<androidx.appcompat.widget.AppCompatTextView
+				android:id="@+id/tv_result"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginHorizontal="50dp"
+				android:lines="1"
+				android:text="@string/_0"
+				android:textAlignment="textEnd"
+				android:textColor="@color/white"
+				android:textSize="60sp" />
+	</FrameLayout>
+
+	<LinearLayout
+			android:id="@+id/linearLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintBottom_toBottomOf="parent">
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingHorizontal="14dp"
+				android:paddingVertical="5dp"
+				app:layout_constraintBottom_toBottomOf="parent">
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_clear"
+					style="@style/CustomBaseButton.CustomSilverButton"
+					android:text="@string/ac"
+					android:textSize="@dimen/small_text" />
+
+			<com.google.android.material.button.MaterialButton
+					style="@style/CustomBaseButton.CustomSilverButton"
+					android:text="@string/plus_and_minus" />
+
+			<com.google.android.material.button.MaterialButton
+					style="@style/CustomBaseButton.CustomSilverButton"
+					android:text="@string/percent" />
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_divided"
+					style="@style/CustomBaseButton.CustomOrangeButton"
+					android:text="@string/del" />
+
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingHorizontal="14dp"
+				android:paddingVertical="5dp"
+				app:layout_constraintBottom_toBottomOf="parent">
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_seven"
+					style="@style/CustomBaseButton"
+					android:text="@string/_7" />
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_eight"
+					style="@style/CustomBaseButton"
+					android:text="@string/_8" />
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_nine"
+					style="@style/CustomBaseButton"
+					android:text="@string/_9" />
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_multiple"
+					style="@style/CustomBaseButton.CustomOrangeButton"
+					android:text="@string/x" />
+
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingHorizontal="14dp"
+				android:paddingVertical="5dp"
+				app:layout_constraintBottom_toBottomOf="parent">
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_four"
+					style="@style/CustomBaseButton"
+					android:text="@string/_4" />
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_five"
+					style="@style/CustomBaseButton"
+					android:text="@string/_5" />
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_six"
+					style="@style/CustomBaseButton"
+					android:text="@string/_6" />
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_minus"
+					style="@style/CustomBaseButton.CustomOrangeButton"
+					android:text="@string/minus" />
+
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingHorizontal="14dp"
+				android:paddingVertical="5dp"
+				app:layout_constraintBottom_toBottomOf="parent">
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_one"
+					style="@style/CustomBaseButton"
+					android:text="@string/_1" />
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_two"
+					style="@style/CustomBaseButton"
+					android:text="@string/_2" />
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_three"
+					style="@style/CustomBaseButton"
+					android:text="@string/_3" />
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_plus"
+					style="@style/CustomBaseButton.CustomOrangeButton"
+					android:text="@string/plus" />
+
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingHorizontal="14dp"
+				android:paddingVertical="5dp"
+				app:layout_constraintBottom_toBottomOf="parent">
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_zero"
+					style="@style/CustomBaseButton.CustomLongButton"
+					android:text="@string/_0" />
+
+			<com.google.android.material.button.MaterialButton
+					style="@style/CustomBaseButton"
+					android:text="@string/dot" />
+
+			<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_equal"
+					style="@style/CustomBaseButton.CustomOrangeButton"
+					android:text="@string/equal" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
